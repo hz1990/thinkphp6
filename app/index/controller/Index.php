@@ -31,6 +31,7 @@ class Index
     }
 
     public function seckill(){
+        //模拟秒杀
         $inventory = 100; //库存
         $redis = new \Redis();
         $redis->connect('127.0.0.1',6379);
@@ -49,6 +50,7 @@ class Index
     }
 
     public function kill_status(){
+        //秒杀状态
         $user_id = 10;
         $redis = new \Redis();
         $redis->connect('127.0.0.1',6379);
@@ -65,6 +67,7 @@ class Index
     }
 
     public function test(){
+        //php面试题
         /*$str = '3,3,4,5,6,7,7';
         $arr = explode(',',$str);
         $min = min($arr);
